@@ -1,0 +1,28 @@
+server:
+  allowedMethods:
+  - GET
+  maxQueuedRequests: 50
+  applicationConnectors:
+  - type: http 
+    port: 8000
+    bindHost: 192.168.1.4
+    acceptQueueSize: 50
+    idleTimeout: 30 seconds
+  adminConnectors:
+  - type: http
+    port: 9003
+    bindHost: 192.168.1.4
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      timeZone: IST    
+smtp_host: smtp.gmail.com
+smtp_socketFactoryport: 587
+smtp_socketFactoryclass: javax.net.ssl.SSLSocketFactory
+smtp_authentication: true
+smtp_port: 587
+start_tls: true
+from_email: mayuresh.kapdule@gmail.com
+username: mayuresh.kapdule@gmail.com
+password: mayu@2016
