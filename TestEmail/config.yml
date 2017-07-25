@@ -23,6 +23,6 @@ smtp_socketFactoryclass: javax.net.ssl.SSLSocketFactory
 smtp_authentication: true
 smtp_port: 587
 start_tls: true
-from_email: mayuresh.kapdule@gmail.com
-username: mayuresh.kapdule@gmail.com
-password: mayu@2016
+from_email:
+username:
+password:
